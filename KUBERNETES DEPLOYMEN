@@ -1,0 +1,31 @@
+Kubernetes deployment in DevOps plays a crucial role in automating and streamlining the deployment process, ensuring that applications are delivered in a scalable, reliable, and efficient manner. Here's a general overview of how Kubernetes fits into a DevOps workflow:
+
+1. Automated Deployment Pipeline:
+
+CI/CD Integration: Kubernetes is often integrated into Continuous Integration and Continuous Deployment (CI/CD) pipelines to automate the deployment process. DevOps tools like Jenkins, GitLab CI, or CircleCI can be used to trigger the deployment process on successful code changes.
+
+Containerization: Code is packaged into containers using Docker or other containerization tools. Kubernetes then manages the orchestration of these containers across various nodes (servers).
+
+
+2. Kubernetes Deployment Process:
+
+Build and Test:
+
+Developers push their code to a Git repository.
+
+The CI pipeline builds a Docker image from the application code and runs unit tests.
+
+If the tests pass, the Docker image is tagged and pushed to a container registry (e.g., Docker Hub, Google Container Registry).
+
+
+Deployment to Kubernetes:
+
+Kubernetes is responsible for deploying containers into clusters using a set of manifests (YAML files). These files define the desired state of the application, such as the number of replicas, resource limits, and environment variables.
+
+kubectl apply is commonly used to deploy and manage these resources in Kubernetes.
+
+
+
+3. Kubernetes Components Involved in Deployment:
+
+**Pods
